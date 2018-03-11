@@ -1,0 +1,132 @@
+<resources>
+
+    <string name="app_name">Mifare Desfire Tool</string>
+    <string name="applicationList">Application list</string>
+    <string name="applicationId">Application %s</string>
+    <string name="applicationIdPICC">Application %s (PICC)</string>
+    <string name="applicationCryptoMultipleDES">DES encryption, %s access keys.</string>
+    <string name="applicationCryptoMultiple3DES">3DES encryption, %s access keys.</string>
+    <string name="applicationCryptoMultiple3K3DES">3K3DES encryption, %s access keys.</string>
+    <string name="applicationCryptoMultipleAES">AES encryption, %s access keys.</string>
+    <string name="applicationCryptoSingleDES">DES encryption, 1 access key.</string>
+    <string name="applicationCryptoSingle3DES">3DES encryption, 1 access key.</string>
+    <string name="applicationCryptoSingle3K3DES">3K3DES encryption, 1 access key.</string>
+    <string name="applicationCryptoSingleAES">AES encryption, 1 access key.</string>
+    <string name="applicationCryptoNone">No encryption</string>
+    
+    <string name="mainApplicationReady">Scan Desfire EV1 tag</string>
+    <string name="tagStatusOffline">Offline</string>
+    <string name="tagStatusOnline">Online</string>
+    <string name="tagStatusLost">Tag lost</string>
+    
+    <string name="fileList">Files</string>
+    <string name="fileId">File %s</string>
+
+    <string name="fileAccessSummary">R%1$s W%2$s RW%3$s C%4$s</string>
+    <string name="fileAccessSummaryFree">Free access</string>
+    <string name="fileAccessFree">*</string>
+    <string name="fileDescription">%1$s file, %2$s.</string>
+    <string name="fileDescriptionSize">%1$s file, %2$s, size %3$s.</string>
+
+    <string name="fileType">File type</string>
+    <string name="fileTypeStandard">Standard</string>
+    <string name="fileTypeBackup">Backup</string>
+    <string name="fileTypeValue">Value</string>
+    <string name="fileTypeLinearRecord">Linear record</string>
+    <string name="fileTypeCyclicRecord">Cyclic record</string>
+    <string name="fileTypeUnknown">Unknown</string>
+
+    <string name="fileCommuncationTypePlain">open comms</string>
+    <string name="fileCommuncationTypePlainMac">open comms + MACing</string>
+    <string name="fileCommuncationTypeEnciphered">enciphered comms</string>
+
+    <string name="fileCommuncations">Communications</string>
+    <string name="fileCommuncationsTypePlain">Open</string>
+    <string name="fileCommuncationsTypePlainMac">Open with MACing</string>
+    <string name="fileCommuncationsTypeEnciphered">Encrypted</string>
+    
+    <string name="applicationCryptoDES">DES</string>
+    <string name="applicationCrypto3DES">3DES</string>
+    <string name="applicationCrypto3K3DES">3K3DES</string>
+    <string name="applicationCryptoAES">AES</string>
+    <string name="applicationCryptoNo">No</string>
+    
+    <string name="applicationKeys">Max access keys</string>
+    <string name="applicationEncryption">Encryption</string>
+
+    <string name="applicationAuthenticateKey">Authenticate %s key</string>
+    <string name="applicationAuthenticateKeyNameVersion">%1$s (version %2$s)</string>
+    <string name="applicationAuthenticateKeyType">Cannot authenticate, no keys of type %s.</string>
+    <string name="applicationAuthenticateKeyDES">3DES/DES</string>
+    <string name="applicationAuthenticateKey3DES">3DES/DES</string>
+    <string name="applicationAuthenticateKey3K3DES">3K3DES</string>
+    <string name="applicationAuthenticateKeyAES">AES</string>
+    <string name="applicationAuthenticatedSuccess">Authenticate success</string>
+    <string name="applicationAuthenticatedFail">Authenticate fail</string>
+    <string name="applicationAuthenticatedAlready">Already authenticated key with %d</string>
+    
+    <string name="applicationChangeKeyAccessRights">Change key access rights</string>
+    <string name="applicationConfigurationChangable">Configuration changeable</string>
+    <string name="applicationFreeCreateAndDelete">Free create/delete</string>
+    <string name="applicationFreeDirectoryList">Free directory list</string>
+    <string name="applicationCanChangeMasterKey">Master key can be changed</string>
+    <string name="applicationKeySettingYes">Yes</string>
+    <string name="applicationKeySettingNo">No</string>
+    
+    <string name="fileReadAccessKey">Read access key</string>
+    <string name="fileWriteAccessKey">Write access key</string>
+    <string name="fileChangeAccessKey">Change access key</string>
+    <string name="fileReadWriteAccessKey">Read/write access key</string>
+    <string name="fileAccessSelectKey">Authenticate file using</string>
+    <string name="fileAccessKey">Key %1$d (%2$s)</string>
+    <string name="fileAccessKeyRead">Read</string>
+    <string name="fileAccessKeyWrite">Write</string>
+    <string name="fileAccessKeyChange">Change</string>
+    <string name="fileSizeBytes">%d bytes</string>
+    <string name="fileSize">File size</string>
+    <string name="fileValue">Value</string>
+    <string name="fileValueLowerLimit">Lower limit</string>
+    <string name="fileValueUpperLimit">Upper limit</string>
+    <string name="fileValueLimitedCreditValue">Limited credit value</string>
+    <string name="fileValueLimitedCredit">Limited credit</string>
+    <string name="fileValueLimitedCreditNo">No</string>
+    <string name="fileValueLimitedCreditYes">Yes</string>
+    
+    <string name="fileRecordRecordSize">Record size</string>
+    <string name="fileRecordMaxRecords">Max records</string>
+    <string name="fileRecordCurrentRecords">Current records</string>
+
+    <string name="fileRecords">Records</string>
+    <string name="fileRecordRecord">#%d</string>
+    
+    <string name="keys">Keys</string>
+    <string name="keyList">Access keys</string>
+    <string name="key">Key #%s</string>
+    <string name="keyVersion">Version %s</string>
+    <string name="keyAdd">Add key</string>
+    <string name="keyDialogName">Name</string>
+    <string name="keyDialogNameHint">Enter name</string>
+    <string name="keyDialogValue">Value</string>
+    <string name="keyDialogValueHint">Enter hexadecimal value</string>
+    <string name="keyDialogVersion">Version</string>
+    <string name="keyDialogVersionHint">Enter hexadecimal value</string>
+    <string name="keyDialogIllegalCharacters">Only digits and characters A-F allowed</string>
+    <string name="keyDialogIllegalLength">Key length must be %d hex characters</string>
+    <string name="keyDialogOk">OK</string>
+    <string name="keyDialogCancel">Cancel</string>
+    <string name="keyDialogDelete">Delete</string>
+    
+    <string name="fileSave">Save</string>
+    <string name="fileSaveDialogOk">OK</string>
+    <string name="fileSaveDialogCancel">Cancel</string>
+    <string name="fileSaveDialogSaveAs">Save as</string>
+    <string name="fileSaveDialogHintFilenameUnadorned">Filename here</string>
+    
+    <string name="fileSavedSuccess">Saved %s</string>
+    <string name="fileSavedFailure">Saving failed</string>
+    
+    <string name="nfcNotAvailableMessage">NFC is not available.</string>
+    <string name="nfcNotEnabledMessage">NFC is disabled, please enable it before continuing.</string>
+    
+    
+</resources>

@@ -1,0 +1,21 @@
+<LinearLayout
+	    xmlns:android="http://schemas.android.com/apk/res/android"
+	    android:layout_width="fill_parent"
+   		android:layout_height="fill_parent"
+	    android:orientation="vertical"
+	    android:background="@color/white"
+	    android:paddingLeft="@dimen/activity_horizontal_fragment_margin"
+	    android:paddingRight="@dimen/activity_horizontal_fragment_margin"
+	     >
+	     
+    	
+	    <ListView
+	        android:id="@+id/listView"
+	        android:layout_width="fill_parent"
+	        android:layout_height="fill_parent"
+	        android:divider="@null"
+			android:dividerHeight="0dp"
+	         >
+	    </ListView>
+	
+	</LinearLayout>

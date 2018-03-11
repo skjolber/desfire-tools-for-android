@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical"
+  android:layout_width="fill_parent"
+  android:layout_height="wrap_content"
+  >
+  
+	<info.hoang8f.android.segmented.SegmentedGroup
+	    android:id="@+id/segmentedControlKeyType"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_margin="10dp"
+	    android:orientation="horizontal"
+	    android:checkedButton="@+id/buttonAES"
+	    >
+	
+	    <RadioButton
+	        android:id="@+id/buttonAES"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="@string/applicationCryptoAES"
+	        style="@style/RadioButton" />
+	    <RadioButton
+	        android:id="@+id/buttonDES"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="@string/applicationCryptoDES"
+	        style="@style/RadioButton" />
+	    	
+	    <RadioButton
+	        android:id="@+id/button3DES"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="@string/applicationCrypto3DES"
+	        style="@style/RadioButton" />
+	    
+	    <RadioButton
+	        android:id="@+id/button3K3DES"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="@string/applicationCrypto3K3DES"
+	        style="@style/RadioButton" />
+	    	    
+	</info.hoang8f.android.segmented.SegmentedGroup>    
+    
+	<TextView
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:text="@string/keyDialogName"
+		/>
+ 
+    <EditText
+        android:id="@+id/name"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+        android:scrollHorizontally="true"
+        android:inputType="text"
+        android:hint="@string/keyDialogNameHint"
+        android:gravity="fill_horizontal"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+	
+	<TextView
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:text="@string/keyDialogValue"
+		/>
+	
+    <EditText
+        android:id="@+id/value"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+        android:scrollHorizontally="true"
+        android:inputType="text"
+        android:hint="@string/keyDialogValueHint"
+        android:gravity="fill_horizontal"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        />
+
+    	<TextView
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:text="@string/keyDialogVersion"
+		/>
+	
+    <EditText
+        android:id="@+id/version"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+        android:scrollHorizontally="true"
+        android:inputType="text"
+        android:hint="@string/keyDialogVersionHint"
+        android:gravity="fill_horizontal"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        />
+    		
+</LinearLayout>

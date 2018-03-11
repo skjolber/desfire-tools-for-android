@@ -1,0 +1,14 @@
+sudo: false
+language: android
+jdk:
+  - oraclejdk8
+  - openjdk8
+
+android:
+  components:
+    - tools
+    - platform-tools
+    - tools
+
+before_install:
+- yes | sdkmanager "platforms;android-27"
