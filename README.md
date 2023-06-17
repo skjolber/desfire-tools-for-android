@@ -24,6 +24,12 @@ The project is based on [Gradle].
 # Usage
 See the example application.
 
+# See also
+
+ * [android-nfc-wrapper](https://github.com/skjolber/android-nfc-wrapper)
+ * [android-nfc-lib](https://github.com/entur/android-nfc-lib)
+ * [android-nfc-lifecycle-wrapper](https://github.com/skjolber/android-nfc-lifecycle-wrapper)
+
 # History
  - 1.0.1: Maintainance release (only available as source code).
  - 1.0.0: Initial version
