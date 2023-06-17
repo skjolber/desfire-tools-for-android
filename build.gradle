@@ -1,12 +1,25 @@
 buildscript {
-    
-    repositories {
+    ext.repos = {
         google()
-        jcenter()
+        mavenCentral()
     }
+
+    repositories repos
     dependencies {
-        classpath 'com.android.tools.build:gradle:3.0.1'
+        classpath 'com.android.tools.build:gradle:7.4.1'
     }
+}
+
+ext {
+    junitVersion = '4.13.2'
+    baristaVersion = '4.3.0'
+    androidxEspressoVersion = '3.5.0'
+    androidxTestRulesVersion = '1.4.0'
+    androidxTestUiAutomatorVersion = '2.2.0'
+    androidxTestExtJunitVersion = '1.1.4'
+    mockitoVersion = '4.9.0'
+    byteBuddyVersion = '1.14.5'
+
 }
 
 allprojects {

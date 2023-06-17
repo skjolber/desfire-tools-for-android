@@ -1286,11 +1286,17 @@ public class MainActivity extends Activity implements ReaderCallback, FragmentMa
         	
         	MainActivity activity = activityReference.get();
 			if(activity != null) {
-				if(activity.isConnected()) {
-					resumeDelayed();
-				} else {
+				try {
+					if (activity.isConnected()) {
+						resumeDelayed();
+					} else {
+						activity.onTagLost();
+
+						pause();
+					}
+				} catch(Exception e) {
 					activity.onTagLost();
-					
+
 					pause();
 				}
 			}

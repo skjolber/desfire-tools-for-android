@@ -1,0 +1,55 @@
+
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion 33
+
+    defaultConfig {
+        minSdkVersion 19
+        targetSdkVersion 33
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+        }
+    }
+
+    lintOptions {
+        abortOnError false
+    }
+
+    compileOptions {
+        // Sets Java compatibility to Java 8
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+dependencies {
+    api "junit:junit:${junitVersion}"
+
+    api("com.adevinta.android:barista:${baristaVersion}")
+
+    api("androidx.test.espresso:espresso-core:${androidxEspressoVersion}")
+    api "androidx.test.espresso:espresso-web:${androidxEspressoVersion}"
+    api("androidx.test.espresso:espresso-contrib:${androidxEspressoVersion}") {
+        exclude group: "com.google.protobuf", module: "protobuf-lite"
+    }
+    api "androidx.test.espresso:espresso-core:${androidxEspressoVersion}"
+    api "androidx.test.espresso:espresso-web:${androidxEspressoVersion}"
+    api("androidx.test.espresso:espresso-contrib:${androidxEspressoVersion}")
+
+    api "androidx.test.espresso:espresso-idling-resource:${androidxEspressoVersion}"
+    api "androidx.test.espresso.idling:idling-concurrent:${androidxEspressoVersion}"
+    api "androidx.test:rules:${androidxTestRulesVersion}"
+    // UiAutomator Testing
+    api "androidx.test.uiautomator:uiautomator:${androidxTestUiAutomatorVersion}"
+    api("androidx.test.ext:junit:${androidxTestExtJunitVersion}")
+}
+
+

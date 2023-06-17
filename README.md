@@ -1,5 +1,3 @@
-[![Build Status](https://travis-ci.org/skjolber/desfire-tools-for-android.svg?branch=master)](https://travis-ci.org/skjolber/desfire-tools-for-android)
-
 # desfire-tools-for-android
 A collection of tools for interaction with [MIFARE DESFire EV1] NFC tags using Android, mostly adapted from [libfreefare] and [nfcjlib].
 
@@ -27,6 +25,7 @@ The project is based on [Gradle].
 See the example application.
 
 # History
+ - 1.0.1: Maintainance release (only available as source code).
  - 1.0.0: Initial version
 
 [Gradle]:                               https://gradle.org/

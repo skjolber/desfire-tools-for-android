@@ -1,2 +1,2 @@
-include ':model', ':app', ':libfreefare', ':nfcjlib'
+include ':test', ':model', ':app', ':libfreefare', ':nfcjlib'
 

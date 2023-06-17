@@ -1416,8 +1416,8 @@ public class MifareDesfire {
 		C.BUFFER_APPEND_LE (cmd, C.getBytes2(iso_file_id), 2, 2);
 	    C.BUFFER_APPEND (cmd, communication_settings);
 	    C.BUFFER_APPEND_LE (cmd, C.getBytes2(access_rights), 2, 2);
-	    C.BUFFER_APPEND_LE (cmd, C.getBytes4(record_size), 3, 4);
-	    C.BUFFER_APPEND_LE (cmd, C.getBytes4(max_number_of_records), 3, 4);
+	    C.BUFFER_APPEND_LE (cmd, C.getBytes3(record_size), 3, 3);
+	    C.BUFFER_APPEND_LE (cmd, C.getBytes3(max_number_of_records), 3, 3);
 
 	    byte[] p = MifareDesfireCrypto.mifare_cryto_preprocess_data (tag, cmd, cmd.position(), 0, MifareDesfireCrypto.MDCM_PLAIN | MifareDesfireCrypto.CMAC_COMMAND);
 

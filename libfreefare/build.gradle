@@ -1,16 +1,13 @@
 apply plugin: 'com.android.library'
 
 android {
-    compileSdkVersion 26
+    compileSdkVersion 33
 
     defaultConfig {
-        minSdkVersion 15
-        targetSdkVersion 26
+        minSdkVersion 19
+        targetSdkVersion 33
         versionCode 1
         versionName "1.0"
-
-        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
-
     }
 
     testOptions {
@@ -29,17 +26,22 @@ android {
     lintOptions {
         abortOnError false
     }
+
+
+    compileOptions {
+        // Sets Java compatibility to Java 8
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
 }
 
 dependencies {
-    implementation fileTree(dir: 'libs', include: ['*.jar'])
     implementation project(':model')
 
-    testImplementation 'junit:junit:4.12'
-    implementation 'com.android.support:appcompat-v7:26.1.0'
-    // https://mvnrepository.com/artifact/org.mockito/mockito-core
-    testImplementation  'org.mockito:mockito-core:2.15.0'
+    testImplementation project(":test")
+    androidTestImplementation project(":test")
 
-    androidTestImplementation 'com.android.support.test:runner:1.0.1'
-    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
+    testImplementation "org.mockito:mockito-core:${mockitoVersion}"
+    androidTestImplementation "org.mockito:mockito-android:${mockitoVersion}"
+    testImplementation "net.bytebuddy:byte-buddy-android:${byteBuddyVersion}"
 }
