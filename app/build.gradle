@@ -15,16 +15,12 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+    namespace "com.skjolberg.mifare.desfiretool"
+
     lintOptions {
         abortOnError false
     }
 
-
-    compileOptions {
-        // Sets Java compatibility to Java 8
-        sourceCompatibility JavaVersion.VERSION_1_8
-        targetCompatibility JavaVersion.VERSION_1_8
-    }
 }
 
 dependencies {
@@ -35,3 +31,4 @@ dependencies {
     testImplementation project(":test")
     androidTestImplementation project(":test")
 }
+

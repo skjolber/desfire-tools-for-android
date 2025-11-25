@@ -6,7 +6,7 @@ buildscript {
 
     repositories repos
     dependencies {
-        classpath 'com.android.tools.build:gradle:7.4.1'
+        classpath 'com.android.tools.build:gradle:8.13.1'
     }
 }
 
@@ -18,15 +18,12 @@ ext {
     androidxTestUiAutomatorVersion = '2.2.0'
     androidxTestExtJunitVersion = '1.1.4'
     mockitoVersion = '4.9.0'
-    byteBuddyVersion = '1.14.5'
+    byteBuddyVersion = '1.18.1'
 
 }
 
 allprojects {
-    repositories {
-        google()
-        jcenter()
-    }
+    repositories repos
 }
 
 task clean(type: Delete) {

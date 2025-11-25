@@ -6,8 +6,6 @@ android {
     defaultConfig {
         minSdkVersion 19
         targetSdkVersion 33
-        versionCode 1
-        versionName "1.0"
     }
 
     buildTypes {
@@ -16,6 +14,8 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+
+    namespace "nfcjlib.desfire.skjolber.github.com"
 
     lintOptions {
         abortOnError false

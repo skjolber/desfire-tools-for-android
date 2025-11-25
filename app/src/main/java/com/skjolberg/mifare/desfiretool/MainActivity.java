@@ -707,26 +707,23 @@ public class MainActivity extends Activity implements ReaderCallback, FragmentMa
 	
 	@Override
 	public boolean onOptionsItemSelected(MenuItem item) {
-		switch (item.getItemId()) {
-    	
-    	case R.id.action_settings: {
-    		showKeysFragment();
-    		return true;
-    	}
 
-    	case R.id.action_add: {
-    		addKey();
-    		return true;
-    	}
+		if(item.getItemId() == R.id.action_settings) {
+			showKeysFragment();
+			return true;
+		}
 
-    	case R.id.action_save : {
-    		saveFileData();
-    		return true;
-    	}
-    	
-    	default:
-    		return super.onOptionsItemSelected(item);
-    	}
+		if(item.getItemId() == R.id.action_add) {
+			addKey();
+			return true;
+		}
+
+		if(item.getItemId() == R.id.action_save) {
+			saveFileData();
+			return true;
+		}
+
+		return super.onOptionsItemSelected(item);
 	}
 	
 	private void addKey() {
