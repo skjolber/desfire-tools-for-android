@@ -1,32 +1,7 @@
 apply plugin: 'com.android.library'
 
 android {
-    compileSdkVersion 33
-
-    defaultConfig {
-        minSdkVersion 19
-        targetSdkVersion 33
-    }
-
-    testOptions {
-        unitTests {
-            returnDefaultValues = true
-        }
-    }
-
-    buildTypes {
-        release {
-            minifyEnabled false
-            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
-        }
-    }
-
     namespace "libfreefare.desfire.skjolber.github.com"
-
-    lintOptions {
-        abortOnError false
-    }
-
 }
 
 dependencies {

@@ -1,26 +1,5 @@
 
-apply plugin: 'com.android.library'
-
 android {
-    compileSdkVersion 33
-
-    defaultConfig {
-        minSdkVersion 19
-        targetSdkVersion 33
-
-        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
-    }
-
-    buildTypes {
-        release {
-            minifyEnabled false
-        }
-    }
-
-    lintOptions {
-        abortOnError false
-    }
-
     namespace "no.entur.abt.client.sdk.test"
 }
 dependencies {

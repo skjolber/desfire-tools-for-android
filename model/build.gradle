@@ -1,24 +1,6 @@
-apply plugin: 'com.android.library'
 
 android {
-    compileSdkVersion 33
-
-    defaultConfig {
-        minSdkVersion 19
-        targetSdkVersion 33
-    }
-
-    buildTypes {
-        release {
-            minifyEnabled false
-        }
-    }
-
     namespace "model.ev1.desfire.skjolber.github.com"
-
-    lintOptions {
-        abortOnError false
-    }
 }
 
 dependencies {
